@@ -27,6 +27,10 @@ def services():
 def about():
     return render_template("about.html")
 
+@app.route('/recent')
+def recent():
+    return render_template("recent_project.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)
