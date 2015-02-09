@@ -1,8 +1,27 @@
-{% extends "base.html" }
+{% extends "base.html" %}
 {% block content %}
 <h1>Portfolio</h1>
 
 <script type="text/javascript" src="/static/jquery.slides.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#slider").slidesjs({
+            width: 940,
+            height: 528
+        });
+    });
+</script>
 
+<div id="slider">
+    <img src="/static/photos/photo1.jpg">
+    <img src="/static/photos/photo2.jpg">
+    <img src="/static/photos/photo3.jpg">
+    <img src="/static/photos/photo4.jpg">
+    <img src="/static/photos/photo5.jpg">
+    <img src="/static/photos/photo6.jpg">
+    <img src="/static/photos/photo7.jpg">
+    <img src="/static/photos/photo8.jpg">
+    <img src="/static/photos/photo9.jpg">
+</div>
 
 {% endblock %}
